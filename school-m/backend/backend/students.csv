@@ -1,0 +1,4 @@
+student_id,name,department,year,email,college
+S001,John Doe,Computer Science,3,john.doe@example.com,ABC College
+S002,Jane Smith,Electrical Engineering,2,jane.smith@example.com,XYZ College
+S003,Ahmed Khan,Mechanical Engineering,4,ahmed.khan@example.com,ABC College

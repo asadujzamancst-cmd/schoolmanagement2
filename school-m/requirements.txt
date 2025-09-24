@@ -1,0 +1,28 @@
+# Core Django and REST framework
+django>=5.0
+djangorestframework
+
+# Data handling and interactive shell
+pandas
+ipython
+
+# Communication (SMS, Voice, etc.)
+twilio
+
+# CORS support for frontend-backend communication
+django-cors-headers
+
+# PostgreSQL database adapter
+psycopg2-binary
+
+# Environment variable management
+python-decouple
+
+# Optional: For handling image uploads
+Pillow
+
+# Optional: For API documentation
+drf-yasg
+
+# Optional: For authentication (JWT)
+djangorestframework-simplejwt

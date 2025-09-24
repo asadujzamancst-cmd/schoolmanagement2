@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: django_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./backend/db.sqlite3:/app/db.sqlite3  # Mount the actual file
+      - ./backend/media:/app/media            # Optional: for uploaded files
+    depends_on:
+      - frontend
+
+  frontend:
+    build: ./frontend
+    container_name: nextjs_frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
+
+# Remove this if you're using SQLite
+# db:
+#   image: postgres:15
+#   container_name: postgres_db
+#   environment:
+#     POSTGRES_DB: mydb
+#     POSTGRES_USER: user
+#     POSTGRES_PASSWORD: password
+#   ports:
+#     - "5432:5432"

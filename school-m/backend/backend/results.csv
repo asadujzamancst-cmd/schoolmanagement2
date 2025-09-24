@@ -1,0 +1,6 @@
+student_id,subject_code,grade,semester,year
+S001,CS101,A,Spring,2024
+S002,EE202,B+,Fall,2023
+S003,ME303,A-,Spring,2024
+S001,CS101,A-,Fall,2023
+S002,EE202,B,Spring,2024
